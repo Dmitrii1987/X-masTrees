@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Cormorant;
+    font-weight: 700;
+    src: local("Cormorant-Bald"), local("Cormorant"),
+    url("../fonts/cormorant-v11-latin_cyrillic-700.woff2") format("woff2"),
+    url("../fonts/cormorant-v11-latin_cyrillic-700.woff") format("woff");
+    font-display: swap; /* пока не скачается нужный шрифт, будет показан вреиенный шрифт,
+    таким образом пользователь в любом случае увидит текст */
+}
+
+:root { /* root это самый главный тэг HTML */
+    --main-color:  #ffff;
+    --second-color: #262626;
+    --one-color:#00654E;
+    --two-color: #006E55;
+    --three-color: #005844;
+    --main-bg-color: #005844;
+    --second-bg-color: #C0B487;
+    --trigger-color: #E5AB39;
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing:inherit;
+}
+
+img {
+    max-width: 100%; /* чтобы картинки не выпадали из контейнеров */
+    height: auto; /* чтобы карнтинки не искажались */
+}
+
+body {
+    font-family: Arial, sans-serif; /* основной шрифт body  */
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    color: var(--main-color);
+}
+
+h1, h2 {
+    font-family: Cormorant, serif;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 100%;
+    color:var(--main-color);
+}
+
+.container {
+    max-width: 1390px;
+    margin: 0 auto; /* сверху и снизу по 0 пикселей, а слева и спарва автоматически выравняется */
+    padding: 0 50px;
+}
+
+.hide {
+    display: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,input {
+    font: inherit; /* значит, что шрифт наследуется  */
+}
+
+button {
+    cursor: pointer;
+}
+
+/* медиа запрос. если размер экрана меньше 1440 px,
+то будут вот такие новые стили. (1440px - размер экрана ноута  */
+@media (max-width: 1440px) {
+    .container {
+        padding: 0 42px;
+    }
+}
