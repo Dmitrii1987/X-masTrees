@@ -60,7 +60,8 @@
         padding: 20px 0;
     }
     .header__container {
-        grid-template-columns: repeat(3, 1fr);  /*тоже самое, что и просто 3 фракции */
+        grid-template-columns: repeat(3, 1fr); /*тоже самое, что и просто 3 фракции */
+        gap: 38px;
     }
     .header__burger {
         /*тут мы ставим бургер на первое место, когда ширина меньше 1000px */
@@ -90,6 +91,13 @@
 
 
 @media (max-width:580px) {
+    .header {
+        padding-top: 16px;
+        padding-bottom: 20px;
+    }
+    .header__container {
+        gap: 15px;
+    }
     .header__consultation {
         padding: 5px 14px;
         font-size: 12px;
