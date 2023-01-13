@@ -30,6 +30,7 @@
 }
 
 .hero__description {
+    font-weight: 400;
     font-size: 26px;
     line-height: 140%;
     letter-spacing: 0.04em;
@@ -50,11 +51,13 @@
 
 .hero__down-img {
     filter: drop-shadow(4px 7px 20px transparent);
-    transition: filter 0.3s ease; /*тень будет появляться плавно*/
+    transition: filter 0.3s ease;
+    /*тень будет появляться плавно*/
     margin-bottom: 13px;
 }
 
-.hero__down:hover .hero__down-img { /*при наведении мыши на ёлочную
+.hero__down:hover .hero__down-img {
+    /*при наведении мыши на ёлочную
     игрушку появляется тень  */
     filter: drop-shadow(4px 7px 20px var(--second-color));
 }
@@ -63,6 +66,126 @@
 
 @media (max-width: 1440px) {
     .hero__img {
-        width: 41vw; /* 41% от размера экрана */
+        width: 41vw;
+        /* 41% от размера экрана */
+    }
+
+    .hero__left {
+        margin-left: -70px;
+        /* -70px выбрал просто так */
+        margin-right: 55px;
+    }
+
+    .hero__right {
+        max-width: 550px;
+    }
+
+    .hero__title {
+        font-size: 60px;
+    }
+
+    .hero__description {
+        font-size: 24px;
+    }
+
+}
+
+
+@media (max-width: 1200px) {
+    .hero__left {
+        margin-left: -42px;
+    }
+
+    .hero__right {
+        max-width: 445px;
+    }
+
+    .hero__title {
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+
+    .hero__description {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .hero__down {
+        max-width: 75px;
+        font-size: 16px;
+    }
+
+    .hero__down-img {
+        width: 65px;
+        margin-bottom: 9px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hero__left {
+        margin-left: -39px;
+        margin-right: 50px;
+    }
+
+    .hero__right {
+        max-width: 360px;
+    }
+
+    .hero__title {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .hero__description {
+        font-size: 16px;
+    }
+
+    .hero__down {
+        max-width: 66px;
+        font-size: 14px;
+    }
+
+    .hero__down-img {
+        width: 40px;
+        margin-bottom: 7px;
+    }
+}
+
+@media (max-width: 760px) {
+    .hero__container {
+        flex-direction: column;
+    }
+
+    .hero__img {
+        width: 100%;
+    }
+
+    .hero__left {
+        margin: 0;
+    }
+}
+
+@media (max-width: 580px) {
+    .hero__left {
+        margin: 0 -10px;
+    }
+
+    .hero__title {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .hero__description {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .hero__down {
+        max-width: 57px;
+        font-size: 12px;
+    }
+
+    .hero__down-img {
+        width: 40px;
     }
 }

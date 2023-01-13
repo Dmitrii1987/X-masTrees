@@ -54,6 +54,11 @@ h1, h2 {
     display: none;
 }
 
+h1, h2, h3, p {
+    margin: 0; /* обнулил марджины для этих элементов,
+    чтобы не было проблем при адаптиве */
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -78,5 +83,17 @@ button {
 @media (max-width: 1440px) {
     .container {
         padding: 0 42px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        padding: 0 39px;
+    }
+}
+
+@media (max-width: 580px) {
+    .container {
+        padding: 0 10px;
     }
 }
