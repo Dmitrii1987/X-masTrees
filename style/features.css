@@ -1,0 +1,37 @@
+.features {
+    background-color: var(--second-bg-color);
+    padding: 40px 0;
+    color: var(--main-color);
+}
+
+.features__list {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.features__item {
+    flex-basis: 236px;
+    padding-top: 115px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    background-position: center top;
+    background-repeat: no-repeat; /*без этого свойства на экране много картинок */
+}
+
+.features__item_one {
+    background-image: var(--url-features-one);
+}
+.features__item_two {
+    background-image: var(--url-features-two);
+}
+.features__item_three {
+    background-image: var(--url-features-three);
+}
+.features__item_four {
+    background-image: var(--url-features-four);
+}
