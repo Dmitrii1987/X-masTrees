@@ -8,7 +8,9 @@
     таким образом пользователь в любом случае увидит текст */
 }
 
-
+html {
+    box-sizing: border-box;
+}
 
 *, *::after, *::before {
     box-sizing:inherit;
