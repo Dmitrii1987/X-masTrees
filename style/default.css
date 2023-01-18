@@ -8,17 +8,7 @@
     таким образом пользователь в любом случае увидит текст */
 }
 
-:root { /* root это самый главный тэг HTML */
-    --main-color:  #ffff;
-    --second-color: #262626;
-    --one-color:#00654E;
-    --two-color: #006E55;
-    --three-color: #005844;
-    --main-bg-color: #005844;
-    --second-bg-color: #C0B487;
-    --trigger-color: #E5AB39;
-    box-sizing: border-box;
-}
+
 
 *, *::after, *::before {
     box-sizing:inherit;
