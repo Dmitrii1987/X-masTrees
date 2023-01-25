@@ -70,7 +70,8 @@
     line-height: 130%;
     letter-spacing: 0.04em;
     color: var(--main-color);
-    background-color: transparent; /* прозрачный */
+    background-color: transparent;
+    /* прозрачный */
 }
 
 .product__button_order {
@@ -106,7 +107,8 @@
 .product__picture {
     width: calc(50% - 15px);
     border-radius: 16px;
-    object-fit: cover; /* картинка не искажается при сжатии */
+    object-fit: cover;
+    /* картинка не искажается при сжатии */
 }
 
 @media (max-width: 1440px) {
@@ -191,5 +193,62 @@
         font-size: 14px;
         border-radius: 6px;
         padding: 8px 20px;
+    }
+}
+
+@media (max-width:760px) {
+    .product {
+        padding: 20px 0;
+    }
+
+    .product__title {
+        font-size: 30px;
+    }
+
+    .product__features {
+        margin-bottom: 20px;
+    }
+
+    .product__description {
+        margin-bottom: 30px;
+    }
+
+    .product__button-wrapper {
+        gap: 20px;
+    }
+}
+
+@media (max-width:580px) {
+    .product:nth-child(even) .product__container,
+    .product__container {
+        flex-direction: column-reverse;
+    }
+
+    .product__content {
+        width: 100%;
+        max-width: none;
+        padding: 0;
+    }
+
+    .product__picture {
+        width: 100%;
+    }
+
+    .product__title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .product__features {
+        font-size: 12px;
+    }
+
+    .product__description {
+        font-size: 14px;
+    }
+    
+    .product__button {
+        font-size: 12px;
+        padding: 5px 14px;
     }
 }
