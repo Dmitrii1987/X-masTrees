@@ -70,10 +70,36 @@
     line-height: 130%;
     letter-spacing: 0.04em;
     color: var(--main-color);
+    background-color: transparent; /* прозрачный */
 }
 
-.product__button_order {}
+.product__button_order {
+    background-color: var(--second-bg-color);
+}
 
 .product__button_more {
     border-color: var(--second-bg-color);
 }
+
+.product__button:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: var(--main-bg-color);
+}
+
+.product__button:active {
+    background-color: var(--second-bg-color);
+    border-color: var(--second-bg-color);
+    color: var(--main-color);
+}
+
+.product__button_order:focus {
+    outline: 2px solid var(--second-color);
+    border-color: transparent;
+}
+
+.product__button_more:focus {
+    outline-color: var(--main-color);
+    border-color: transparent;
+}
+
