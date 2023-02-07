@@ -105,4 +105,27 @@
         grid-template-columns: repeat(2,1fr);
         gap: 30px;
     }
+
+    .footer__logo, .footer__list-social {
+        order: -1;
+    }
+}
+
+@media (max-width:580px) {
+    .footer {
+        font-size: 12px;
+        padding: 30px 0;
+    }
+
+    .footer__container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__contacts {
+        font-size: 14px;
+    }
+
+    .footer__contacts, .footer__rules-list {
+        order: -1;
+    }
 }
