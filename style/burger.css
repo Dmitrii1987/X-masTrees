@@ -1,5 +1,19 @@
 .burger {
     display: none;
+    position: relative;
+    --width:21px;
+    --height:14px;
+    --size-line:2px;
+    --color: var(--main-bg-color);
+    width: var(--width);
+    height: var(--height);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.burger__line {
+    position: absolute;
 }
 
 @media (max-width:1000px) {
