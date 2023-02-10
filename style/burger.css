@@ -1,9 +1,10 @@
 .burger {
     display: none;
     position: relative;
-    --width:21px;
-    --height:14px;
-    --size-line:2px;
+    /*ниже мы создаём переменные, которые будем потом использовать */
+    --width: 21px;
+    --height: 14px;
+    --size-line: 2px;
     --color: var(--main-bg-color);
     width: var(--width);
     height: var(--height);
@@ -14,10 +15,57 @@
 
 .burger__line {
     position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: var(--size-line);
+    transform: translateY(-50%);
+    /*сделал эту линию ровно по середине */
+    background-color: var(--color);
+}
+
+.burger:before,
+.burger:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: var(--size-line);
+    background-color: var(--color);
+}
+
+.burger:before {
+    top: 0;
+}
+
+.burger:after {
+    bottom: 0;
+}
+
+.burger_active .burger__line {
+    transform: scale(0);
+}
+
+.burger_active:before {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+.burger_active:after {
+    top: 50%;
+    transform: rotate(45deg);
+    bottom: auto;
 }
 
 @media (max-width:1000px) {
     .burger {
         display: block;
+    }
+}
+
+@media (max-width:580px) {
+    .burger {
+        --width: 18px;
+        --height: 12px;
     }
 }
