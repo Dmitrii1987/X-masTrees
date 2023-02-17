@@ -1,0 +1,16 @@
+.modal {
+    position: relative;
+    background-color: var(--main-color);
+}
+
+.modal__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.modal__title {
+    color: var(--main-bg-color);
+}
