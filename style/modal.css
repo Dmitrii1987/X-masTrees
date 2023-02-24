@@ -155,4 +155,27 @@
     .modal {
         padding: 30px 15px;
     }
+
+    .modal__label-text {
+        font-size: 12px;
+    }
+
+    .modal__title {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .modal__label-last {
+        margin-bottom: 15px;
+    }
+
+    .modal__input {
+        font-size: 12px;
+        padding: 38px 10px 16px;
+    }
+
+    .modal__button {
+        padding: 5px 15px;
+        font-size: 12px;
+    }
 }

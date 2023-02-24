@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px; /*чтобы ничего не прижималось по краям */
-    overflow-x: auto; /*чтобы страница скролилась по горизонтали */
+    overflow-y: auto; /*чтобы страница скролилась по вертикали */
     display: none;
 }
 
