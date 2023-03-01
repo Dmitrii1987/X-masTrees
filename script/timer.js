@@ -29,13 +29,13 @@ const timer = () => {
         const days = Math.floor(timeRemaining / 60 / 60 / 24 % 30);
         console.log('days: ', days, 'hours: ', hours, 'minutes: ', minutes, 'seconds: ', seconds);
 
-        declOfNum(seconds, ['секунда', 'секунды', 'секунд']);
-        declOfNum(minutes, ['минута', 'минуты', 'минут']);
-        declOfNum(hours, ['час', 'часа', 'часов']);
-        declOfNum(days, ['день', 'дня', 'дней']);
+        const s = declOfNum(seconds, ['секунда', 'секунды', 'секунд']);
+        const m = declOfNum(minutes, ['минута', 'минуты', 'минут']);
+        const h = declOfNum(hours, ['час', 'часа', 'часов']);
+        const d = declOfNum(days, ['день', 'дня', 'дней']);
 
 
-        timerCount.textContent = `${days} дня ${hours} часов ${minutes} минут ${seconds} секунд`
+        timerCount.textContent = `${d}  ${h}  ${m}  ${s} `
 
         if (timeRemaining > 0) {
             setTimeout(startTimer, 1000)
@@ -46,8 +46,6 @@ const timer = () => {
 
     startTimer();
 };
-
-
 
 
 timer();
